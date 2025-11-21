@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Haven - Premium Brews</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">☕ Coffee Haven</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Awaken Your Senses</h1>
+            <p>Freshly brewed coffee, made with passion.</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item" data-name="Espresso" data-price="3.50">
+                <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&h=300&fit=crop" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>Rich and bold, the perfect start.</p>
+                <span class="price">$3.50</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Latte" data-price="4.50">
+                <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&h=300&fit=crop" alt="Latte">
+                <h3>Latte</h3>
+                <p>Creamy and smooth, with steamed milk.</p>
+                <span class="price">$4.50</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Cappuccino" data-price="4.00">
+                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>Foamy delight with equal parts espresso and milk.</p>
+                <span class="price">$4.00</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-name="Cold Brew" data-price="5.00">
+                <img src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=400&h=300&fit=crop" alt="Cold Brew">
+                <h3>Cold Brew</h3>
+                <p>Smooth and refreshing, steeped for 12 hours.</p>
+                <span class="price">$5.00</span>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Our Gallery</h2>
+        <div class="gallery-slider">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&h=500&fit=crop" alt="Coffee Shop Interior">
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=500&fit=crop" alt="Coffee Beans">
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=800&h=500&fit=crop" alt="Barista at Work">
+            </div>
+        </div>
+        <button class="prev-btn">&lt;</button>
+        <button class="next-btn">&gt;</button>
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=600&h=400&fit=crop" alt="About Us" class="about-img">
+            <div>
+                <h2>About Us</h2>
+                <p>At Coffee Haven, we source the finest beans from around the world, roasting them to perfection. Our mission is to bring you the ultimate coffee experience, one cup at a time.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <p>"The best espresso in town! Highly recommend."</p>
+                <cite>- Alex J.</cite>
+            </div>
+            <div class="testimonial">
+                <p>"Cozy atmosphere and amazing lattes."</p>
+                <cite>- Maria L.</cite>
+            </div>
+            <div class="testimonial">
+                <p>"Fresh brews every day. My go-to spot."</p>
+                <cite>- Jordan K.</cite>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Coffee Haven. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
